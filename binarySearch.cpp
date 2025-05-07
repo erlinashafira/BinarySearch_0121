@@ -78,7 +78,17 @@ void binarySearch()
 
         int low = 0;
         int high = nPanjang - 1;
-        
+
+        do
+        {
+            int mid = (low + high) / 2;
+            if (element[mid] == x)
+            {
+                cout << "\n[x] element " << x << "tidak ditemukan dalam array.\n ";
+            }
+            cout << "\nIngin mencari lagi? (y/n): ";
+            cin >> ulang;
+        } while (ulang == 'y' || ulang == 'Y');
     }
     
 }
